@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+    text-shadow: 2px 3px 2px black;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    color: transparent;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+    text-shadow: 0px 0px 0px;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar a {
+    font-size: 18;
+    color: transparent;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+    text-shadow: 0px 0px 0px;
+}
+
+.navbar a.active,
+.navbar a:hover
+{
+    color: white;
+    animation: showRight4 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    color: transparent;
+    font-size: 56px;
+    font-weight: 700;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+    text-shadow: 0px 0px 0px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: transparent;
+    animation: showRight4 1s ease forwards;
+    animation-delay: 1s;
+    text-shadow: 0px 0px 0px;
+    
+}
+
+
+.home-content p {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 20px 0 40px;
+    color: transparent;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+    text-shadow: 0px 0px 0px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: transparent;
+    border: transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    color: transparent;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    animation: showRight2 1s ease forwards;
+    animation-delay: .4s;
+    text-shadow: 0px 0px 0px;
+    
+}
+
+.btn-box a:hover {
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    animation: showRight3 1s ease forwards;
+    animation-delay: .4;
+    text-shadow: 0px 0px 0px;
+    
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+    background: #00abf0;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: transparent;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    animation: showRightico 1s ease forwards;
+    animation-delay: .4s;
+    text-shadow: 0px 0px 0px;
+}
+
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right: 200px;
+    width: 400px;
+    height: 100%;
+    transition: 1s; 
+}
+
+/*.home-imgHover:hover {
+    opacity: 0;
+}*/
+
+.con {
+    color: transparent;
+    position: relative;
+    display: flexbox;
+    justify-content: space-between;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+    text-shadow: 0px 0px 0px;
+}
+
+.port-content {
+    max-width: 650px;
+}
+
+.port-content h1 {
+    color: transparent;
+    font-size: 32px;
+    font-weight: 700;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+    text-shadow: 0px 0px 0px;
+}
+
+.port-content h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: transparent;
+    animation: showRight4 1s ease forwards;
+    animation-delay: 1s;
+    text-shadow: 0px 0px 0px;
+    
+}
+
+
+.port-content p {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 20px 0 20px;
+    color: transparent;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+    text-shadow: 0px 0px 0px;
+}
+
+
+@keyframes showRight {
+    100% {
+        color: white;
+        text-shadow: 2px 3px 2px black;
+    }
+}
+
+@keyframes showRight2 {
+    100% {
+        color: #00abf0;
+        text-shadow: 2px 2px 5px black;
+        border: 2px solid #00abf0;
+    }
+}
+
+@keyframes showRightico {
+    100% {
+        border: 2px solid whitesmoke;
+        color: white;
+        text-shadow: 2px 3px 2px black;
+    }
+}
+
+@keyframes showRight3 {
+    100% {
+        border: 1px solid black;
+        color: white;
+        text-shadow: 2px 2px 3px black;
+    }
+}
+
+@keyframes showRight4 {
+    100% {
+        color: #00abf0;
+        text-shadow: 2px 2px 5px black;
+    }
+}
