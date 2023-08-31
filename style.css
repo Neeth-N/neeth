@@ -297,7 +297,7 @@ body {
         position: fixed;
         top: 0;
         width: 100%;
-        padding: 35px 10%;
+        padding: 45px 5%;
         background: transparent;
         display: flex;
         justify-content: center;
@@ -323,7 +323,8 @@ body {
         color: transparent;
         text-decoration: none;
         font-weight: 500;
-        margin-left: 5px;
+        margin-left: 1px;
+        justify-content: space-between;
         align-items: center;
         display: flexbox;
         transition: .3s;
@@ -333,19 +334,107 @@ body {
     }
 
     .home-content {
-        position: absolute;
         max-width: 600px;
-        opacity: 1;
+        position: absolute;
     }
 
     .home {
         height: 100vh;
         display: flex;
         align-items: center;
-        padding: 0 10%;
+        padding: 0 5% ;
         background: url(bg.jpg) no-repeat;
         background-size: cover;
         background-position-x: 80%;
     }  
+    
+.home-content h1 {
+    color: transparent;
+    font-size: 32px;
+    font-weight: 700;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+    text-shadow: 0px 0px 0px;
+}
+
+.home-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: transparent;
+    animation: showRight4 1s ease forwards;
+    animation-delay: 1s;
+    text-shadow: 0px 0px 0px;
+    
+}
+
+
+.home-content p {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 20px 0 20px;
+    color: transparent;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+    text-shadow: 0px 0px 0px;
+}
+
+.port-content {
+    max-width: 600px;
+    position: absolute;
+}
+
+.port-content h1 {
+    color: transparent;
+    font-size: 30px;
+    font-weight: 700;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+    text-shadow: 0px 0px 0px;
+}
+
+.port-content h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: transparent;
+    animation: showRight4 1s ease forwards;
+    animation-delay: 1s;
+    text-shadow: 0px 0px 0px;
+    
+}
+
+
+.port-content p {
+    font-size: 9px;
+    font-weight: 500;
+    margin: 20px 0 20px;
+    color: transparent;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+    text-shadow: 0px 0px 0px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 100%;
+    background: transparent;
+    border: transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    color: transparent;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    animation: showRight2 1s ease forwards;
+    animation-delay: .4s;
+    text-shadow: 0px 0px 0px;
+    
+}
 
 }
